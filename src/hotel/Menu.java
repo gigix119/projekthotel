@@ -13,11 +13,9 @@ public class Menu {
         int input;
         do {
             showOptions();
-            //dodaj 5 opcje zamknij program i wybranie tej opcji sprawia ze petla sie konczy
             Scanner scanner = new Scanner(System.in);
-            input = scanner.nextInt(); // kazde wywolanie nextInt zostawia w scannerze "\n"
-//            scanner = new Scanner(System.in);
-            scanner.nextLine(); // czysci "\n" ze scannera zeby scanner byl pusty i wolal dane znowu z konsoli
+            input = scanner.nextInt();
+            scanner.nextLine();
 
 
             executeOptions(input);
